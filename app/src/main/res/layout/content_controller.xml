@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.tagplug.tagplug.Activities.ControllerActivity"
+    tools:showIn="@layout/activity_controller">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:checked="false"
+        android:layout_below="@+id/device_name"
+        android:layout_alignLeft="@+id/device_name"
+        android:layout_alignStart="@+id/device_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textSize="60sp"
+        android:id="@+id/temp"
+        android:layout_below="@+id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plus"
+        android:id="@+id/plus_temp"
+        android:layout_marginTop="73dp"
+        android:layout_below="@+id/temp"
+        android:layout_toLeftOf="@+id/temp"
+        android:layout_toStartOf="@+id/temp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minus"
+        android:id="@+id/minus_temp"
+        android:layout_alignTop="@+id/plus_temp"
+        android:layout_toRightOf="@+id/temp"
+        android:layout_toEndOf="@+id/temp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="AC"
+        android:id="@+id/device_name"
+        android:textSize="40sp"
+        android:layout_marginTop="98dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
